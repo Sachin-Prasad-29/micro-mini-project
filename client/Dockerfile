@@ -1,6 +1,10 @@
 # get base image of node installed 
 FROM node:16-alpine
 
+
+# Some changes
+ENV CI=true
+ENV WDS_SOCKET_PORT=0
 # Setup working directory
 WORKDIR /app
 
